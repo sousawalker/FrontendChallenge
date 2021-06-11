@@ -1,0 +1,141 @@
+$forcedFont: 'forced';
+
+@mixin border-top-left-radius($value) {
+  -webkit-border-top-left-radius: $value;
+  -moz-border-radius-topleft: $value;
+  border-top-left-radius: $value;
+}
+
+@mixin border-top-right-radius($value) {
+  -webkit-border-top-right-radius: $value;
+  -moz-border-radius-topright: $value;
+  border-top-right-radius: $value;
+}
+
+@mixin border-bottom-left-radius($value) {
+  -webkit-border-bottom-left-radius: $value;
+  -moz-border-radius-bottomleft: $value;
+  border-bottom-left-radius: $value;
+}
+
+@mixin border-bottom-right-radius($value) {
+  -webkit-border-bottom-right-radius: $value;
+  -moz-border-radius-bottomright: $value;
+  border-bottom-right-radius: $value;
+}
+
+@mixin border-radius($value) {
+  -webkit-border-radius: $value;
+  -moz-border-radius: $value;
+  border-radius: $value;
+}
+
+@mixin translate($left, $top) {
+  transform: translate($left, $top);
+  -webkit-transform: translate($left, $top);
+  -moz-transform: translate($left, $top);
+  -o-transform: translate($left, $top);
+  -ms-transform: translate($left, $top);
+}
+
+@mixin user-select($value) {
+  -webkit-user-select: $value;
+  -moz-user-select: $value;
+  -ms-user-select: $value;
+  user-select: $value;
+}
+
+@mixin box-shadow($hor, $ver, $dis, $opa) {
+  -webkit-box-shadow: $hor $ver $dis 0px rgba(0, 0, 0, $opa);
+  -moz-box-shadow:    $hor $ver $dis 0px rgba(0, 0, 0, $opa);
+  -ms-box-shadow:     $hor $ver $dis 0px rgba(0, 0, 0, $opa);
+  box-shadow:         $hor $ver $dis 0px rgba(0, 0, 0, $opa);
+}
+
+@mixin rotate($value) {
+  transform: rotate($value);
+}
+
+/* ===================== keyframes para animações */
+
+@keyframes expandInputSearch {
+  0% {
+    width: 20px;
+    height: 20px;
+    right: 22px;
+    top: 22px;
+    @include border-radius(50%);
+  }
+
+  50% {
+    width: 64px;
+    height: 64px;
+    top: 0;
+    right: 0;
+    @include border-radius(0);
+  }
+
+  100% {
+    width: 100%;
+    height: 64px;
+    top: 0;
+    right: 0;
+    @include border-radius(0);
+  }
+}
+
+@keyframes decreaseInputSearch {
+  0% {
+    width: 100%;
+    height: 64px;
+    top: 0;
+    right: 0;
+    @include border-radius(0);
+  }
+
+  50% {
+    width: 64px;
+    height: 64px;
+    top: 0;
+    right: 0;
+    @include border-radius(0);
+  }
+
+  100% {
+    width: 20px;
+    height: 20px;
+    right: 22px;
+    top: 22px;
+    @include border-radius(50%);
+  }
+}
+
+@keyframes expandInputSearchHeader {
+  0% {
+    width: 28px;
+    height: 32px;
+    right: 2px;
+    top: 0;
+    @include border-radius(5px);
+  }
+
+  100% {
+    width: 240px;
+    right: 16px;
+  }
+}
+
+@keyframes decreaseInputSearchHeader {
+  0% {
+    width: 240px;
+    right: 16px;
+  }
+
+  100%   {
+    width: 28px;
+    height: 32px;
+    right: 2px;
+    top: 0;
+    @include border-radius(5px);
+  }
+}

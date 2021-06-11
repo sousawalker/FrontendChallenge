@@ -1,0 +1,16 @@
+@import './themes/loading-bar';
+
+html,
+body {
+  min-width: 100vw;
+  min-height: 100vh;
+
+  * {
+    outline: none;
+  }
+}
+
+body {
+  overflow: hidden;
+  font-size: 62.5%;
+}

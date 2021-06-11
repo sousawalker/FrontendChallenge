@@ -1,0 +1,19 @@
+<div id="team-management">
+  <button class="open" *ngIf="!modal" (click)="modalToggle();"><img src="/assets/teams.svg"></button>
+
+  <div class="modal" *ngIf="modal">
+    <button class="close" (click)="modalToggle();"><img src="/assets/close.svg"></button>
+
+    <div class="content">
+      <h1>Teams</h1>
+
+      <ng-container *ngFor="let team of data; let i = index;">
+        <div class="team" *ngIf="i < 8">
+          <input type="text" value="{{ team.name }}" (keyup)="updateTeam(team, $event);">
+        </div>
+      </ng-container>
+    </div>
+  </div>
+
+  <div class="overlay" *ngIf="modal" (click)="modalToggle();"></div>
+</div>

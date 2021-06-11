@@ -1,0 +1,64 @@
+{
+  "team-positions": [
+    {
+      "id": 1,
+      "name": "Five Dogs"
+    },
+    {
+      "id": 2,
+      "name": "No Towel"
+    },
+    {
+      "id": 3,
+      "name": "Q.U.I.E.T."
+    },
+    {
+      "id": 4,
+      "name": "Fivedust"
+    },
+    {
+      "id": 5,
+      "name": "Delightful Romance"
+    },
+    {
+      "id": 6,
+      "name": "Policemens"
+    },
+    {
+      "id": 7,
+      "name": "Thunder Eyebrows"
+    },
+    {
+      "id": 8,
+      "name": "Autumn Mice"
+    },
+    {
+      "id": 9,
+      "name": "No Towel"
+    },
+    {
+      "id": 10,
+      "name": "Fivedust"
+    },
+    {
+      "id": 11,
+      "name": "Policemens"
+    },
+    {
+      "id": 12,
+      "name": "Thunder Eyebrows"
+    },
+    {
+      "id": 13,
+      "name": "No Towel"
+    },
+    {
+      "id": 14,
+      "name": "Policemens"
+    },
+    {
+      "id": 15,
+      "name": "Policemens"
+    }
+  ]
+}

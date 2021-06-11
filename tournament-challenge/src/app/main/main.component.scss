@@ -1,0 +1,20 @@
+@import '../../themes/default-styles';
+
+#main {
+  width: 100vw;
+  height: 100vh;
+  background-image: url('/assets/background.jpg');
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+
+  .content {
+    width: 100vw;
+    height: 100vh;
+    background: rgb(131,58,180);
+    background: -moz-linear-gradient(134deg, rgba(131,58,180,1) 0%, rgba(253,29,29,0.5) 50%, rgba(252,176,69,1) 100%);
+    background: -webkit-linear-gradient(134deg, rgba(131,58,180,1) 0%, rgba(253,29,29,0.5) 50%, rgba(252,176,69,1) 100%);
+    background: linear-gradient(134deg, rgba(131,58,180,1) 0%, rgba(253,29,29,0.5) 50%, rgba(252,176,69,1) 100%);
+    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#833ab4",endColorstr="#fcb045",GradientType=1);
+  }
+}
